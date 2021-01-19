@@ -1,0 +1,54 @@
+Descript.ion /cat/root
+speed.exactly.exe программа для измерения реальной пропускной способности памяти с учетом латентности чипсета и CPU
+speed.exactly.make.bat CALL clock.make.bat speed.exactly.exe
+unroll.read.exe программа для исследования влияние глубины развертки цикла, читающего память, на время его выполнения
+unroll.read.make.bat CALL clock.make -release %1 unroll.read.exe
+unroll.write.exe программа для исследования влияние глубины развертки цикла, записывающего в память, на время его выполнения
+dependence.exe программа, демонстрирующая эффективность обработки независимых данных
+dependence.make.bat CALL clock.make.bat -release %1 dependence.exe
+parallel.test.exe программа, реализующая алгоритм параллельного чтения памяти, позволяющий "разогнать" ее на максимальную пропускную способность
+parellel.test.make.bat CALL clock.make.bat -release %1 parallel.test.exe
+list.splint.exe программа, определяющая оптимальную стратегию расщепления списков
+list.splint.make.bat CALL clock.make.bat -release list.splint.exe
+list.separated.exe программа, демонстрирующая эффективность трассировки разделенных списков
+list.separated.make.bat CALL clock.make  -release %1 list.separated.exe
+list.obj.exe программа, демонстрирующая пагубное влияния страничной организации памяти
+list.obj.make.bat CALL clock.make  -release %1 list.obj.exe
+list.step.exe программа, демонстрирующая зависимость времени трассировки списка от шага чтения памяти
+list.step.make.bat CALL clock.make  -release %1 list.step.exe
+memory.way.make.bat CALL clock.make  -release %1 memory.way.exe
+memory.way.exe программа, демонстрирующая зависимость времени обработки блока от величины шага
+memory.hit.miss.make.bat CALL clock.make  -release %1 memory.hit.miss.exe
+memory.hit.miss.exe программа, демонстрирующая memory hit, memory miss & memory organization
+DRAM.wave.exe программа для детального изучения "волн" DRAM-памяти
+DRAM.wave.make.bat CALL clock.make.bat -release %1 DRAM.wave.exe
+bank.malloc.exe программа, определяющая номера банков с которых начинаются блоки памяти, выделяемые функцией malloc
+bank.malloc.make.bat CALL clock.make.bat %1 bank.malloc.exe
+stream.virtual.exe программа, демонстрирующая эффективность виртуализации потоков в зависимости от их числа
+stream.virtual.make.bat CALL clock.make  -release %1 stream.virtual.exe
+DWORD.exe программа, демонстрирущая эффективность обработки двойных слов
+DWORD.make.bat CALL clock.make.bat -release %1 DWORD.exe
+align.make.bat CALL clock.make.bat -release %1 align.exe
+align.exe программа, демонстрирующая влияние выравнивания адресов на скорость обработки блоков данных
+align.memcpy.exe программа, демонстрирующая влияние выравнивния адресов на скорость копирования памяти
+align.memcpy.make.bat CALL clock.make.bat -release %1 align.memcpy.exe
+align.dwstream.exe программа, демонстрирующая демонстрация н е э ф ф е к т и в н о с т и  выравнивания потоков данных типа int
+align.dwstream.make.bat CALL clock.make -release %1 align.dwstream.exe
+align.bstream.exe Пример реализации функции, самостоятельно выравнивающий байтовый поток данных
+align.bstream.make.bat CALL clock.make -release %1 align.bstream.exe
+mem.mix.exe программа, демонстрирующая эффективность комбинирования обращения к памяти с выполнением вычислений
+mem.mix.make.bat CALL clock.make  -release %1 mem.mix.exe
+read.write.exe программа, демонстрирующая влияние перекрытия транзакций чтения/записи на производительность
+read.write.make.bat CALL clock.make -release %1 read.write.exe
+memcpy.optimize.exe Оптимизированная реализация memcpy
+memcpy.optimize.make.bat CALL clock.make  -release %1 memcpy.optimize.exe
+memcmp.optimize.exe Оптимизированная реализация memcmp
+memcmp.optimize.make.bat CALL clock.make  -release %1 memcmp.optimize.exe
+MFC.str.exe программа для сравнение эффективности MFC и Си функций, работающий со строками
+MFC.str.make.bat CALL clock.make.bat -release -LIB LIBCMT.LIB --cpp  MFC.str.exe
+speculative.read.exe программп, демонстрирующая эффективность использования спекулятивной загрузки данных
+speculative.read.make.bat CALL clock.make -release %1 speculative.read.exe
+sort.linear.exe пример улучшенной реализации алгоритма линейной сортировки
+sort.linear.make.bat CALL clock.make -release %1 sort.linear.exe
+unroll.write.make.bat CALL clock.make -release %1 unroll.write.exe
+

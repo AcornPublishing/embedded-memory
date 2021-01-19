@@ -1,0 +1,5 @@
+crypted.dat      - Encrypted file for decryption using pswd.exe
+crypter.c        - File-encrypting utility used to encrypt the files that neeed 
+                   to be decrypted using pswd.exe
+crypter.make.bat - CALL clock.make crypter.c
+Descript.ion     - /cat/root

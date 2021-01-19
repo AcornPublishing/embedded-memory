@@ -1,0 +1,1 @@
+#define MAX_AVIAL_MEM   (64*M)

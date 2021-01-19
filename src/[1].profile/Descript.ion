@@ -1,0 +1,14 @@
+crypted.dat             - encrypted file for pswd
+Descript.ion            - /cat/root
+test.c                  - measures the execution time of individual machine commands
+readm.c                 - demonstrates inconstancy of the time required to process
+                          memory blocks
+test.mod                - embedding file
+pswd.optimized.c        - optimized version of the password cracker
+pswd.c                  - non-optimized version of the password cracker
+pswd.profile.AMD.bat    - compiling and linking optimized file for profiling with AMD                                  CodeAnalyst
+pswd.make.bat           - CALL clock.make -release pswd.c
+pswd.optimized.make.bat - CALL clock.make -release pswd.optimized.c
+readm.make.bat          - CALL clock.make -release readm.c
+test.make.bat           - CALL clock.make -release test.c
+etc                     - miscellaneous

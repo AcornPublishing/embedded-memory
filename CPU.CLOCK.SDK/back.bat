@@ -1,0 +1,1 @@
+pkzip -add -maximum -directories clock.sdk.zip *.*

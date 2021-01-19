@@ -1,0 +1,13 @@
+Descript.ion           - /cat/root
+asm.vs.c.cpy.asm.asm   - Assembly implementation of the memory copying procedure
+asm.vs.c.cpy.c         - Program for comparing assembly implementation of the 
+                         memory copying function to the same function implemented in C
+asm.vs.c.cpy.make.bat  - clock.make _compiler_name_ -release  asm.vs.c.cpy.c asm.vs.c.cpy.asm.obj
+asm.vs.c.min.asm.asm   - Assembly implementation of the procedure for searching minimum
+asm.vs.c.min.c           Program for comparing assembler implementation of the min function 
+                         to the same function implemented in C
+asm.vs.c.min.make.bat  - clock.make _compiler_name_ -release  asm.vs.c.min.c asm.vs.c.min.asm.obj
+asm.vs.c.sort.asm.asm  - Assembly implementation of the bubble sort procedure
+asm.vs.c.sort.make.bat - clock.make _compiler_name_ -release  asm.vs.c.sort.c asm.vs.c.sort.asm.obj
+asm.vs.c.sort.c        - Program for comparing assembly impelemtation of the bubble sort 
+                         procedure to the same procedure implemented in C

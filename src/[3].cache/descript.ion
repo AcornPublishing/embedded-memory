@@ -1,0 +1,29 @@
+cache.size.make.bat CALL clock.make -release %1 cache.size.c
+cache.size.c The example demonstrating dependence of the processing time on the size of processed block and type of processing
+code.cache.size.xm Assembly listing of the program generating arbitrary number of NOP machine commands
+code.cache.size.c Example demonstrating the consequences of exceeding L1 (L2) cache size
+code.cache.size.make.new.bat /complex Batch file performing translation of test program
+align.for.make.bat CALL clock.make -release %1 align.for.c
+banks.c Program demonstrating the consequences of cache bank conflict
+banks.make.bat CALL clock.make -release %1 banks.c
+L1.overassoc.c Example demonstrating cache line conflicts and their influence on the performance
+L1.overassoc.make.bat CALL clock.make -release %1 L1.overassoc.c
+column.big.c Example demonstrating specific features of processing large 2D arrays
+column.big.make.bat CALL clock.make -release %1 column.big.c
+mem.stail.make.bat CALL clock.make -release %1 mem.stail.c
+mem.stail.c Example illustrating memory delays when reading/writing data of different size
+align.for.c Example demonstrating consequences of using splitted loop counter
+store_buff.xm Kernel of the program demonstrating unloading store buffers in parallel with filling other store buffers
+store_buff_NOP.xm Kernel of the program demonstrating buffers unloading during bus idle time
+store_buff.c Example demonstrating unloading of the store buffers
+store_buff.make.bat /complex
+store_buff_NOP.make.bat /complex
+write_sin.c Example of optimization by means of combining write commands with calculations
+_turbo_memcpy.size.c Turbo-copying function using new P-III+ caching control commands.
+_turbo_memcpy.size.make.bat CALL clock.make -release %1 _turbo_memcpy.size.c
+memstore.direct.make.bat CALL clock.make -release %1 memstore.direct.c
+memstore.direct.c Example for measuring memory initialization speed  in both directions
+cache_prefetch_unroll.c Example demonstrating the effect of unrolling  the prefetching loop
+cache_prefetch_unroll.make.bat CALL clock.make -release %1 cache_prefetch_unroll.c
+write_sin.make.bat CALL clock.make -release %1 write_sin.c
+descript.ion /cat/root

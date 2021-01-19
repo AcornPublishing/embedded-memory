@@ -1,0 +1,53 @@
+Descript.ion /cat/root
+speed.exactly.c program for measuring actual memory throughput with the account of chipset and CPU latency
+speed.exactly.make.bat CALL clock.make.bat speed.exactly.c
+unroll.read.c program for investigation of the influence of the loop unrolling depth on the execution time of the memory-reading loop
+unroll.read.make.bat CALL clock.make -release %1 unroll.read.c
+unroll.write.c program for investigation of the loop unrolling depth on the execution time of the memory-writing loop
+dependence.c program demonstrating the efficiency of processing independent data
+dependence.make.bat CALL clock.make.bat -release %1 dependence.c
+parallel.test.c program implementing the parallel memory reading algorithm that allows to "increase" memory throughput
+parellel.test.make.bat CALL clock.make.bat -release %1 parallel.test.c
+list.splint.c program determining optimal stragegy of list splitting
+list.splint.make.bat CALL clock.make.bat -release list.splint.c
+list.separated.c program demonstrating efficiency of tracing splinted lists
+list.separated.make.bat CALL clock.make  -release %1 list.separated.c
+list.obj.c program demonstrating negative impact of memory paging
+list.obj.make.bat CALL clock.make  -release %1 list.obj.c
+list.step.c program demonstrating dependce of the list tracing time
+list.step.make.bat CALL clock.make  -release %1 list.step.c
+memory.way.make.bat CALL clock.make  -release %1 memory.way.c
+memory.way.c program demonstrating the dependence of the block processing time on the step size
+memory.hit.miss.make.bat CALL clock.make  -release %1 memory.hit.miss.c
+memory.hit.miss.c program demonstrating memory hit, memory miss & memory organization
+DRAM.wave.c program for detailed investigation of DRAM "ripples"
+DRAM.wave.make.bat CALL clock.make.bat -release %1 DRAM.wave.c
+bank.malloc.c program determining the bank numbers, from which memory blocks allocated by malloc start
+bank.malloc.make.bat CALL clock.make.bat %1 bank.malloc.c
+stream.virtual.c program demonstrating efficiency of flow virtualization depending on their number
+stream.virtual.make.bat CALL clock.make  -release %1 stream.virtual.c
+DWORD.c program demonstrating the efficiency of processing double words
+DWORD.make.bat CALL clock.make.bat -release %1 DWORD.c
+align.make.bat CALL clock.make.bat -release %1 align.c
+align.c program demonstrating the influence of address alignment on the speed of processing data blocks
+align.memcpy.c program demonstrating the influence of address alignment of the speed of memory copying
+align.memcpy.make.bat CALL clock.make.bat -release %1 align.memcpy.c
+align.dwstream.c program demonstrating i n e f f i c i e n c y   of aligning flows of int data
+align.dwstream.make.bat CALL clock.make -release %1 align.dwstream.c
+align.bstream.c Example of implementation of the function that alignes byte data flow
+align.bstream.make.bat CALL clock.make -release %1 align.bstream.c
+mem.mix.c program demonstrating efficiency of combining memory access with calculations
+mem.mix.make.bat CALL clock.make  -release %1 mem.mix.c
+read.write.c program demonstrating the effect of read/write transaction overlapping on the performance
+read.write.make.bat CALL clock.make -release %1 read.write.c
+memcpy.optimize.c Optimized implementation of memcpy
+memcpy.optimize.make.bat CALL clock.make  -release %1 memcpy.optimize.c
+memcmp.optimize.c Optimized implementation of memcmp
+memcmp.optimize.make.bat CALL clock.make  -release %1 memcmp.optimize.c
+MFC.str.c program for comparing efficiency of MFC and C string functions
+MFC.str.make.bat CALL clock.make.bat -release -LIB LIBCMT.LIB --cpp  MFC.str.c
+speculative.read.c program demonstrating efficiency of speculative data loading
+speculative.read.make.bat CALL clock.make -release %1 speculative.read.c
+sort.linear.c example of improved implementation of linear sort algortihm
+sort.linear.make.bat CALL clock.make -release %1 sort.linear.c
+unroll.write.make.bat CALL clock.make -release %1 unroll.write.c

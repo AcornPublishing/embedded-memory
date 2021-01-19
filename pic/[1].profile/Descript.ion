@@ -1,0 +1,30 @@
+Fig01_01.doc This diagram illustrates total execution time of each function. 
+             At first glance, it might seem that there are three hotspots here.
+             In practice, however, this is not the case.
+Fig01_02.doc This diagram illustrates net execution time of each function
+             (i.e., minus execution time of child functions). As is clearly seen
+             from this diagram, the program has only one hotspot. However, it is 
+             really very "hot".
+Fig01_03.tif VTune profiler Logo
+Fig01_04.tif AMD Code Analyst profiler Logo
+Fig01_05.tif Help screen with Copyright information displayed by Microsoft Profile.exe 		             profiler supplied along with Visual C++ compiler
+Fig01_06.tif Contents of the window displayed by VTune immediately after analyzing 
+             an application. In first place, we are interested in the
+             contents of the topmost pane, displaying hotspots,
+             according to their addresses. The bottom window contains 
+             information on relative execution time of all modules
+             of the system. Notice that the pswd.exe module
+             (labeled by an arrow) doesn't take the leading position, and
+             it seems that the lion's share of the execution time is consumed by
+             some other module. At first glance, it seems that it doesn't make any sense
+             to optimize the pswd.exe module. In practice, however, this
+             is not so...
+Fig01_07.tif Hierarchy of "hot" functions built by the Call Graph Wizard.
+             The color symbolizes the function's "temperature", 
+             and the number beside it specifies how many times this function was called
+Fig01_08.tif "Temperature" distribution within the Calculate_CRC function
+Fig01_09.tif Dynamic analysis of the program allows to determine the "temperature"
+             of each machine instruction and explains the reasons of "heating".
+Fig01_10.tif The usage of Assembly Coach for optimizing machine command scheduling
+Fig01_11.tif Chronology of password cracker optimization
+Descript.ion /cat/root

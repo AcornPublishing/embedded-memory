@@ -1,0 +1,6 @@
+crypter.exe encrypting utility for encrypting files and decrypt then using pswd.exe
+Descript.ion /cat/root
+pswd.exe non-optimized version of password cracker
+pswd.optimized.exe optimized version of the password cracker
+readm.exe demonstration of inconstancy of the memory block processing time
+test.exe measurement facility for measuring execution time of individual machine commands

@@ -1,0 +1,27 @@
+========================= I N S T A L L A T I O N ========================
+* CLOCK PROJECT MAKER * by Kris Kaspersky Version 1.0 beta AT 23-07-2001
+(utility for the "Code Optimization: Effective Memory Usage" book)
+========================================================================
+
+   1) Open the clock.make.bat and clock.clear.bat files and find the 
+"SET  %CLOCKSDK%" string. Correct the path to the "CPU.CLOCK.SDK" profiler 
+_without_ terminating it by a slash.
+(You can also delete this line and create a new environment variable
+with the same name in the system)
+
+   2) Copy the clock.make.bat  and  clock.clear.bat  to any directory
+specified by the PATH environment variable.
+
+   3) Install MASM 6.13 macro assembler and Microsoft  Visual  C++ 6.0
+(the next version is planned to include support for other
+assemblers/compilers)
+
+   4) I am not sure that clock.make.bat will run under systems
+other than Windows 2000 due to the usage of filename extensions.
+If this is the case, find all "%~n1" strings and replace them by "%1".
+Bear in mind that in this case you'll have to specify the project
+filename without extension in the command line.
+For example: clock.make.bat TEST 
+
+Kris Kaspersky (kk@sendmail.ru)
+

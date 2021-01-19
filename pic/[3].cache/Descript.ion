@@ -1,0 +1,92 @@
+Descript.ion - /cat/root
+Fig03_01.tif - Design of the simplest trigger (left), analogous to a dragon biting its 
+               own tail (right)
+Fig03_02.tif - Design of the NOT element (inverter)
+Fig03_03.tif - Design of a six-transistor cell of SRAM
+Fig03_04.tif - Design of a single eight-transistor cell of two-port SRAM
+Fig03_05.tif - DRAM cell
+Fig03_06.tif - DRAM cell implemented on a chip
+Fig03_07.tif - Design of a typical SRAM chip
+Fig03_08.tif - Timing diagrams for reading and writing asynchronous static memory
+Fig03_09.wmf - Location of cache in the memory hierarchy
+Fig03_10.tif - Construction of direct-mapped cache
+Fig03_11.tif - Construction of N-way set associative cache
+Fig03_12.wmf - Hierarchy of two-level cache
+Fig03_13.wmf - Inclusive architecture
+Fig03_14.wmf - Exclusive architecture
+Fig03_15.wmf - Cache subsystem of contemporary processors
+Fig03_16.wmf - Flow chart of the cache subsystem implemented in processors  
+               based on the Intel Pentium 6 core
+Fig03_17.tif - Physical implementation of cache memory  
+               (Intel Pentium III "Coppermine" processor)
+Fig03_18.doc - Dependence of the processing time on the block size,  
+               without subtracting the linear component (AMD-K6)
+Fig03_19.doc - Dependence of the processing speed on the block size (AMD-K6)
+Fig03_20.doc - Dependence of the processing speed on the block size  (Celeron 300A)
+Fig03_21.doc - Dependence of the processing speed on the block size (AMD Athlon)
+Fig03_22.doc - Dependence of the processing speed on the block size (PIII)
+Fig03_23.doc - Change of the command-execution time, depending on the size  
+               of the executable code
+Fig03_24.wmf - If the data to be read start in one cache line and continue in another line,
+               such data are processed with a delay
+Fig03_25.tif - Natural data alignment
+Fig03_26.doc - Performance drop when processing line-split data
+Fig03_27.doc - Influence of data alignment on performance
+Fig03_28.doc - Mapping cache memory to cache lines
+Fig03_29.tif - Cells located in different cache banks 
+               (i.e., in different static memory arrays) are read or written in one clock. 
+               If they were not, each variable would be processed  sequentially, which would 
+               require twice as many clocks
+Fig03_30.doc - Performance drop caused by a cache-bank conflict
+Fig03_32.doc - Cache-line conflicts cause performance to decrease when
+               the loaded data hit the same cache line
+Fig03_32.doc - Time required to process two-dimensional arrays,  
+               dependent on the read step
+Fig03_33.wmf - Delays caused by overlapped read ans write areas
+Fig03_34.wmf - Delays caused by mismatched bit capacity of the data	283
+Fig03_35.doc - Delays that occur when processing data of different lengths (in L1 or L2 cache)
+Fig03_36.doc - Delays that occur when processing data of different lengths located
+               in the main memory
+Fig03_37.doc - Unloading write buffers
+Fig03_38.doc - Efficiency of combining memory-write operations with calculations
+Fig03_39.doc - Efficiency of software prefetching after optimization (Listing 3.20)
+Fig03_40.doc - Comparison of the efficiency of different prefetching methods
+Fig03_41.doc - Influence of different prefetching types on application performance
+Fig03_42.tif - Demonstration of the memory-exchange pipeline
+Fig03_43.tif - Executing a loop without prefetching (T( = Tc - (Ti + Tb))
+Fig03_44.tif - Executing a loop (Tc >= Tl + Tb) with a prefetching distance 
+               of one iteration  (the arrow indicates data dependence)
+Fig03_45.tif - Executing a loop (Tl + Tb > Tc > Tb)  with a prefetching distance 
+               of two iterations  (arrows indicate data dependence)
+Fig03_46.tif - Executing a loop (Tb > Tc) with a prefetching distance 
+               of three iterations  (arrows indicate data dependence)
+Fig03_47.doc - Effect of overprefetching on performance 
+               (assuming that the time required  to copy memory 
+               using the built-in memcpy function equals 100%)
+Fig03_48.doc - Dependence of the copying speed on the starting 
+               address of the copied block on the Pentium III 733/133/100 processor 
+               (in which the time required to copy memory blocks whose starting addresses 
+               are multiples of 0õ10 equals 100%)
+Fig03_49.doc - Results of testing the function that copies memory by quadruple words,  
+               using different-sized blocks on Celeron 300A/66/66 and Pentium III 733/133/100  
+              (in which performance of the built-in memcpy function equals 100%)
+Fig03_50.doc - Results of testing the turbo-copying function on different-sized  
+               memory blocks on Pentium III 733/133/100 (in which the performance  
+               of the built-in memcpy function equals 100%)
+Fig03_51.doc - Dependence of the performance of the turbo-copying function  
+               on the size of the preloaded block (Pentium III 733/133/100)
+Fig03_52.doc - Dependence of the initialization time of different-sized memory blocks  
+               on the alignment of the initial address (Pentium III 733/133/100)
+Fig03_53.doc - Dependence of the initialization time of different-sized memory blocks 
+               on the alignment of the initial address (Celeron 300A/66/66)
+Fig03_54.doc - Inconstancy of the speed at which memory cells missing from cache 
+               are written (during sequential processing of 512 memory blocks of 4 KB each)
+Fig03_55.doc - Time of initialization, with subsequent processing for different-sized  
+               memory blocks, if the initialization time for the built-in memset function 
+               equals 100%  and time is required for forward initialization of small blocks 
+               processed from their ends  to their beginnings 
+               (see the memstore_direct program)
+Fig03_56.doc - Initialization time of memory blocks of different sizes,  
+               if the initialization time of the built-in memset function equals 100%
+Fig03_57.doc - Using movq (AMD Athlon)
+

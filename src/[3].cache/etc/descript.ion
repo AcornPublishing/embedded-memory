@@ -1,0 +1,17 @@
+read.write.c Program for evaluation of the read/write transaction overlapping on the performance
+read.write.make.bat CALL clock.make -release %1 read.write.c
+prefetch.hierarchy.L2.make.bat CALL clock.make -release %1 prefetch.hierarchy.L2.c
+prefetch.hierarchy.L2.c Example demonstrating the efficiency of loading data into L1 cache bypassing L2
+prefetch.hierarchy.type.c Example demonstrating the influence of the choice of prefetched cach hierarchy on the performance
+prefetch.hierarchy.type.make.bat CALL clock.make.bat -release %1 prefetch.hierarchy.type.c
+memset.optimize.c Example demonstrating technique of memory fill optimization by means of writhe-through into the system memory bypassing the cache
+memset.optimize.make.bat CALL clock.make -release %1 memset_optimize.c
+memcpy.optimize.c Example illustrating optimization technique for memory copying by means of prefetching
+memcpy.optimize.make.bat CALL clock.make -release %1 memcpy.optimize.c
+brust.order.c Example demonstrating the address sequence in burst cycle
+brust.order.make.bat CALL clock.make -release %1 brust.order.c
+descript.ion /cat/root
+memcpy.direct.make.bat CALL clock.make -release %1 memcpy.direct.c
+memcpy.direct.c Example demonstrating speed of memory copying in both directions
+mem.stail.read.make.bat CALL clock.make -release %1 mem.stail.read.c
+mem.stail.read.c Example demonstrating the delays during memory read/write	данных различного размера

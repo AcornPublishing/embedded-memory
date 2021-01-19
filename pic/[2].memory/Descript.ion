@@ -1,0 +1,87 @@
+Descript.ion - /cat/root
+Fig02_01.gif - Billions of bit cells, packed within a tiny chip that fits easily 
+               in your palm, form contemporary RAM
+Fig02_02.wmf - Memory hierarchy in Windows 9x/NT/2000  and UNIX operating systems
+Fig02_03.tif - 1,024-bit core of a UNIVAC computer (about life-size)
+Fig02_04.tif - Design of the SDRAM chip
+Fig02_05.tif - Memory cell of a contemporary DRAM chip
+Fig02_06.tif - Timing diagrams illustrating the operation  of specific DRAM types
+Fig02_07.tif - More timing diagrams illustrating the operation of specific DRAM types
+Fig02_08.doc - Maximum performance of various memory types
+Fig02_09.wmf - North Bridge design of the Intel 815EP chipset 
+               (which contains the memory controller, labeled Memory Interface)
+Fig02_10.tif - Appearance of the Intel 815EP chipset
+Fig02_11.tif - Memory interaction mechanism in AMD 750 chipset 	
+Fig02_12.tif - Typical technique for mapping processor addresses to physical 
+               addresses in DRAM
+Fig02_13.doc - Efficiency of unrolling memory-reading loops 
+               (in which the loop-processing time sharply 
+               decreases with the unrolling depth)
+Fig02_14.doc - Efficiency of unrolling memory-writing loops
+               (in which the loop-execution time is 
+               independent of the unrolling depth)
+Fig02_15.doc - RAM throughput test for linear reading of dependent and independent data
+Fig02_16.tif - Avoid linear reading of memory cells. Instead, during the first pass, 
+               read the cells at an increment equal to the multiple of the burst cycle
+               length. Process the remaining cells as usual
+Fig02_17.doc - Efficiency of parallel reading
+Fig02_18.doc - Dependence of processing time on the splitting level of the list
+Fig02_19.tif - Arrangement of a classic list
+Fig02_20.tif - Arrangement of an optimized list
+Fig02_21.tif - Floating-length pointers should use the minimal number of bits
+               to reduce the amount of required memory
+Fig02_22.doc - Efficiency of processing separated lists using short pointers
+Fig02_23.doc - Efficiency of different approaches that optimize the structure
+Fig02_24.doc - Dependence of the block-processing time on the value of the reading step
+Fig02_25.doc - Time required to access the memory cell depends on the cell address 
+               for linear reading
+Fig02_26.doc - Dependence of the data-block processing time on the reading step, 
+               with ripples caused by DRAM-bank recharging
+Fig02_27.doc - Memory waves reveal the design of memory chips, including the distance
+               between the end of one DRAM page and the start of another (a), 
+               the size of each DRAM bank (b), and the size of a DRAM page (c and d).	
+Fig02_28.tif - Several source flows (left) are combined to form one physical flow, 
+               constructed according to the address-interleave principle
+Fig02_29.doc - Efficiency of virtual flows on Pentium III 733/133/100/I815EP/2x4
+Fig02_30.doc - Efficiency of virtual flows on AMD Athlon 1050/100/100/VIA KT 133/4x4
+Fig02_31.doc - Features of the buffering mechanism on the VIA KT 133 chipset
+Fig02_32.doc - Efficiency of reading and writing large memory blocks 
+	       in double and quadruple words (when the byte-processing time equals 100%)
+Fig02_33.doc - Efficiency of aligning the starting address when processing a large 
+	       data array (write operations do not require data to be aligned)
+Fig02_34.doc - Influence of the alignment of the source and target addresses 
+               on performance when copying memory blocks
+Fig02_35.tif - Efficient processing of unaligned double-word data flow
+Fig02_36.doc - Algorithm that "efficiently" processes unaligned double-word data flow
+               actually decreases performance
+Fig02_37.tif - Efficient technique of aligning byte-data flows
+Fig02_38.doc - Efficiency of the suggested technique for aligning byte streams of data
+Fig02_39.doc - Efficiency of combining calculation operations with commands that access memory
+Fig02_40.doc - Influence of overlapped read and write transactions on the processing time 
+               of large data blocks
+Fig02_41.doc - Efficiency of parallel memory copying, with a clear  performance gain 
+               (about 30%) on the Athlon processor
+Fig02_42.tif - Copying overlapping memory blocks: If the source is  to the right of 
+               the target (top), memory can be moved without  problems. 
+               If the source is to the left of the target (bottom), moving the memory 
+               cells "forward" will overwrite the source.
+Fig02_43.tif - "Four cycle" algorithm of direct memory movement  using 
+               two intermediate buffers
+Fig02_44.doc - Efficiency of different memory-moving algorithms
+Fig02_45.doc - Efficiency of different memory-moving algorithms (enlarged)
+Fig02_46.doc - Comparing the memmove and MyMemMove functions  
+               on AMD Athlon 1050/100/100/VIA KT 133
+Fig02_47.doc - Efficiency of different algorithms that compare memory blocks
+Fig02_48.doc - Comparing the library functions supplied with
+               Microsoft Visual C++ to their equivalent OS functions
+Fig02_49.tif - Structures of C, Pascal, Delphi, and MFC strings	188
+Fig02_50.tif - Efficiency of MFC and C string functions  
+               (MFC functions are significantly faster)
+Fig02_51.tif - Eliminating data dependency by prefetching  the block that will be processed next
+Fig02_52.doc - Time required to sort different amounts of data using quick-sort and 
+               linear-sort algorithms
+Fig02_53.tif - Sorting using the mapping method
+Fig02_54.doc - Superiority of the linear-sort over the quick-sort algorithm. 
+               A linear search  of 2 million of numbers is executed 250 times faster 
+               on either processor
+
